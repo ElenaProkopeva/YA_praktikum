@@ -5,7 +5,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-public class RentDataPage extends BaseUrlTest{
+public class RentDataPage{
+    private final WebDriver driver;
     // Заголовок "Про аренду"
     private final By pageTitle = By.className("Order_Header__BZXOb");
     // Поле Когда привезти

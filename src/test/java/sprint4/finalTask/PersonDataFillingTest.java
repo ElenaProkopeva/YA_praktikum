@@ -1,6 +1,5 @@
 package sprint4.finalTask;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -52,9 +51,4 @@ public class PersonDataFillingTest extends BaseUrlTest{
         assertEquals("Поля заполнены с ошибками!", isNotErrorsPresent, actualPageTitle.equals(expectedPageTitle));
     }
 
-    @After
-    public void teardown() {
-        // Закрой браузер
-        driver.quit();
-    }
 }
