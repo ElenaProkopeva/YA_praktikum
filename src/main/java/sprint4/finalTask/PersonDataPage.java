@@ -3,7 +3,8 @@ package sprint4.finalTask;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class PersonDataPage extends BaseUrlTest{
+public class PersonDataPage{
+    private final WebDriver driver;
     // Заголовок "Для кого самокат"
     private final By pageTitle = By.className("Order_Header__BZXOb");
     // Поле Имя

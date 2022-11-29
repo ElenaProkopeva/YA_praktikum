@@ -1,12 +1,9 @@
 package sprint4.finalTask;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -38,7 +35,6 @@ public class OrderButtonClickTest extends BaseUrlTest{
         HomeScooterPage homeScooterPage = new HomeScooterPage(driver);
         PersonDataPage personDataPage = new PersonDataPage(driver);
 
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath(xpathWay)));
         homeScooterPage.orderButtonClick(xpathWay);
         String expectedPageTitle = "Для кого самокат";
         String actualPageTitle = personDataPage.getPageTitle();
@@ -46,9 +42,4 @@ public class OrderButtonClickTest extends BaseUrlTest{
         assertEquals("Переход на страницу заказа не выполнен: заголовок страницы неверный", isOrderRegistrationStart, actualPageTitle.equals(expectedPageTitle));
     }
 
-    @After
-    public void teardown() {
-        // Закрой браузер
-        driver.quit();
-    }
 }

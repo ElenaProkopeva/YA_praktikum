@@ -1,12 +1,9 @@
 package sprint4.finalTask;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -35,7 +32,6 @@ public class ScooterOrderingFullPathTest extends BaseUrlTest{
         driver.get("https://qa-scooter.praktikum-services.ru/");
 
         HomeScooterPage homeScooterPage = new HomeScooterPage(driver);
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath(xpathWay)));
         homeScooterPage.orderButtonClick(xpathWay);
 
 
@@ -56,10 +52,4 @@ public class ScooterOrderingFullPathTest extends BaseUrlTest{
         assertEquals("Заказ не оформлен", expectedWindowTitle, actualWindowTitle);
     }
 
-
-    @After
-    public void teardown() {
-        // Закрой браузер
-        driver.quit();
-    }
 }
