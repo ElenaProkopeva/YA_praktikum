@@ -4,4 +4,5 @@ package org.example.additionalTask;
 public interface ShoppingCart {
 
     double getTotalPrice();
+    double getTotalPriceWithDiscount();
 }
