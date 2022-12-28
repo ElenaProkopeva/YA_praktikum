@@ -18,7 +18,20 @@ public class Main {
                 new Item(20_000),
                 new Item(1_000)
         );
-        OnlineShoppingCart onlineShoppingCart = new OnlineShoppingCart(itemlist);
+        OnlineShoppingCart onlineShoppingCart = new OnlineShoppingCart(itemlist, 10);
         System.out.println("Полная стоимость покупок: " + onlineShoppingCart.getTotalPrice());
+        System.out.println("Полная стоимость покупок со скидкой: " + onlineShoppingCart.getTotalPriceWithDiscount());
     }
 }
+
+//Задача №2: Дизайн классов. Учет скидки при расчете полной стоимости
+//
+//        Появилось новое требование: корзина должна учитывать скидку
+//        Процент скидки можно устанавливать при создании корзины через конструктор вот так:
+//
+//        ShoppingCart cart = new OnlineShoppingCart(items, 10); // 10% скидка на всю корзину
+//        Задание
+//        Считать полную стоимость корзины с учетом скидки.
+//        Интерфейс взаимодействия с корзиной не должен измениться.
+//
+//        Присылайте свои варианты в тред к этому сообщению. Будем обсуждать вместе. Помните, неправильных вариантов нет, давайте практиковаться и искать оптимальные
