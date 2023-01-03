@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: sprint7.RestAssureTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 3, Skipped: 0, Time elapsed: 6.053 s <<< FAILURE! - in sprint7.RestAssureTest
+checkUserActivityAndPrintResponseBody(sprint7.RestAssureTest)  Time elapsed: 1.319 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path data.about doesn't match.
+Expected: Автор автотестов
+  Actual: Самый крутой исследователь
+
+	at sprint7.RestAssureTest.checkUserActivityAndPrintResponseBody(RestAssureTest.java:59)
+
+likeTheFirstPhoto(sprint7.RestAssureTest)  Time elapsed: 0.418 s  <<< ERROR!
+java.lang.IllegalArgumentException: Unnamed path parameter cannot be null (path parameter at index 0 is null)
+	at sprint7.RestAssureTest.likeTheFirstPhoto(RestAssureTest.java:147)
+
+createNewPlaceAndCheckResponsePatch(sprint7.RestAssureTest)  Time elapsed: 0.033 s  <<< ERROR!
+java.io.FileNotFoundException: newCard.json (Не удается найти указанный файл)
+	at sprint7.RestAssureTest.createNewPlaceAndCheckResponsePatch(RestAssureTest.java:90)
+
+createNewPlaceAndCheckResponse(sprint7.RestAssureTest)  Time elapsed: 0.013 s  <<< ERROR!
+java.io.FileNotFoundException: newCard.json (Не удается найти указанный файл)
+	at sprint7.RestAssureTest.createNewPlaceAndCheckResponse(RestAssureTest.java:75)
+
+checkUserNameAndPrintResponseBody(sprint7.RestAssureTest)  Time elapsed: 0.315 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path data.name doesn't match.
+Expected: Аристарх Сократович
+  Actual: Василий Васильев
+
+	at sprint7.RestAssureTest.checkUserNameAndPrintResponseBody(RestAssureTest.java:46)
+
+getMyInfoStatusCode(sprint7.RestAssureTest)  Time elapsed: 0.341 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path data.name doesn't match.
+Expected: Аристарх Сократович
+  Actual: Василий Васильев
+
+	at sprint7.RestAssureTest.getMyInfoStatusCode(RestAssureTest.java:38)
+

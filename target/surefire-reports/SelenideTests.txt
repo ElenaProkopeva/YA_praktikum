@@ -1,0 +1,108 @@
+-------------------------------------------------------------------------------
+Test set: SelenideTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 32.385 s <<< FAILURE! - in SelenideTests
+test(SelenideTests)  Time elapsed: 6.182 s  <<< FAILURE!
+com.codeborne.selenide.ex.InvalidStateException: 
+Invalid element state [By.className: profile__image]: element click intercepted: Element <div class="profile__image" style="background-image: url(&quot;https://code.s3.yandex.net/qa-automation-engineer/java/files/paid-track/sprint1/avatarSelenide.png&quot;);"></div> is not clickable at point (285, 216). Other element would receive the click: <div class="popup popup_type_edit-avatar popup_is-opened">...</div>
+Screenshot: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725025674.0.png
+Page source: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725025674.0.html
+Timeout: 4 s.
+Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="profile__image" style="background-image: url(&quot;https://code.s3.yandex.net/qa-automation-engineer/java/files/paid-track/sprint1/avatarSelenide.png&quot;);"></div> is not clickable at point (285, 216). Other element would receive the click: <div class="popup popup_type_edit-avatar popup_is-opened">...</div>
+	at SelenideTests.test(SelenideTests.java:46)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="profile__image" style="background-image: url(&quot;https://code.s3.yandex.net/qa-automation-engineer/java/files/paid-track/sprint1/avatarSelenide.png&quot;);"></div> is not clickable at point (285, 216). Other element would receive the click: <div class="popup popup_type_edit-avatar popup_is-opened">...</div>
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bd7ecd47360e8c7029d018f633320ac, clickElement {id=2041c4e4-191c-4a4e-8eb8-9eff65b11bcc}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\egromova\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61043/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9bd7ecd47360e8c7029d018f633320ac)] -> class name: profile__image]
+Session ID: 9bd7ecd47360e8c7029d018f633320ac
+	at SelenideTests.test(SelenideTests.java:46)
+
+test1(SelenideTests)  Time elapsed: 4.889 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.id: email}
+Expected: editable
+Screenshot: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725030624.1.png
+Page source: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725030624.1.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+	at SelenideTests.test1(SelenideTests.java:61)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bd7ecd47360e8c7029d018f633320ac, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\egromova\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61043/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bd7ecd47360e8c7029d018f633320ac
+	at SelenideTests.test1(SelenideTests.java:61)
+
+test2(SelenideTests)  Time elapsed: 4.846 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.id: email}
+Expected: editable
+Screenshot: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725035477.2.png
+Page source: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725035477.2.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+	at SelenideTests.test2(SelenideTests.java:84)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bd7ecd47360e8c7029d018f633320ac, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\egromova\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61043/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bd7ecd47360e8c7029d018f633320ac
+	at SelenideTests.test2(SelenideTests.java:84)
+
+test3(SelenideTests)  Time elapsed: 4.673 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.id: email}
+Expected: editable
+Screenshot: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725040156.3.png
+Page source: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725040156.3.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+	at SelenideTests.test3(SelenideTests.java:104)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bd7ecd47360e8c7029d018f633320ac, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\egromova\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61043/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bd7ecd47360e8c7029d018f633320ac
+	at SelenideTests.test3(SelenideTests.java:104)
+
+checkButtonText(SelenideTests)  Time elapsed: 4.745 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.className: auth-form__button}
+Expected: exact text "Войти"
+Screenshot: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725044898.4.png
+Page source: file:/C:/Users/egromova/IdeaProjects/ya_praktikum_prokopeva/build/reports/tests/1672725044898.4.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".auth\-form__button"}
+	at SelenideTests.checkButtonText(SelenideTests.java:19)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".auth\-form__button"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bd7ecd47360e8c7029d018f633320ac, findElement {using=class name, value=auth-form__button}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\egromova\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61043/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bd7ecd47360e8c7029d018f633320ac
+	at SelenideTests.checkButtonText(SelenideTests.java:19)
+

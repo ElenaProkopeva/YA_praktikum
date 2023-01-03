@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: sprint6.MockTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.187 sec
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in sprint6.MockTest
+initializationError(sprint6.MockTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Exception: No public static parameters method on class sprint6.MockTest
+
